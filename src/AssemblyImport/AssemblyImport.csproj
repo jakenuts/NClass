@@ -42,9 +42,6 @@
     <Prefer32Bit>false</Prefer32Bit>
   </PropertyGroup>
   <ItemGroup>
-    <Reference Include="NReflect">
-      <HintPath>..\..\libs\NReflect\NReflect\bin\$(Configuration)\NReflect.dll</HintPath>
-    </Reference>
     <Reference Include="System" />
     <Reference Include="System.Core" />
     <Reference Include="System.Drawing" />
@@ -105,6 +102,10 @@
     <Compile Include="UnsafeTypesPresentException.cs" />
   </ItemGroup>
   <ItemGroup>
+    <ProjectReference Include="..\..\libs\NReflect\NReflect\NReflect.csproj">
+      <Project>{760af36d-9463-491d-9fd0-b9c429d8030c}</Project>
+      <Name>NReflect</Name>
+    </ProjectReference>
     <ProjectReference Include="..\Core\Core.csproj">
       <Project>{8CF10505-3C2E-4E45-AB90-21613237B412}</Project>
       <Name>Core</Name>
